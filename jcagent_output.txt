@@ -1,0 +1,226 @@
+time=2024-10-22 14:43:37.945434-04:00 PID=1054 level=info msg=Could not load registration attempts counter. Assuming this is the first attempt and not applying backoff
+time=2024-10-22 14:43:37.945514-04:00 PID=1054 level=info msg=Certificate read failed error=Could not read the client certificate PEM file '/opt/jc/client.crt', err='Could not read PEM file, err='open /opt/jc/client.crt: no such file or directory''
+time=2024-10-22 14:43:37.945524-04:00 PID=1054 level=info msg=REGISTRATION: No existing valid certificate found, initializing it
+time=2024-10-22 14:43:37.945531-04:00 PID=1054 level=info msg=REGISTRATION: Creating client certificates
+time=2024-10-22 14:43:38.657268-04:00 PID=1054 level=info msg=REGISTRATION: Client certificates created and signed successfully
+time=2024-10-22 14:43:39.082685-04:00 PID=1054 level=info msg=REGISTRATION: Registering new system
+time=2024-10-22 14:43:39.082772-04:00 PID=1054 level=info msg=systemreport.reporter: running system report
+time=2024-10-22 14:43:39.082856-04:00 PID=1054 level=error msg=systemreport.reporter: error collecting data error=Get "": unsupported protocol scheme ""
+time=2024-10-22 14:43:44.144325-04:00 PID=1054 level=info msg=linuxSshdParamsCollector.Collect: running /usr/sbin/sshd -T: Exec error: exit status 127
+bash: line 1: /usr/sbin/sshd: No such file or directory
+ error=exit status 127
+time=2024-10-22 14:43:44.144379-04:00 PID=1054 level=error msg=systemreport.reporter: error collecting data error=exit status 127
+time=2024-10-22 14:43:44.145205-04:00 PID=1054 level=error msg=systemreport.reporter: error collecting data error=exit status 127
+time=2024-10-22 14:43:44.149478-04:00 PID=1054 level=error msg=Error retrieving libNSS version: "dpkg-query -W --showformat='${VERSION}' libnss3" error=exit status 1
+time=2024-10-22 14:43:44.150662-04:00 PID=1054 level=error msg=systemreport.reporter: error collecting data error=Error collecting NSS Version: exit status 1
+time=2024-10-22 14:43:44.154257-04:00 PID=1054 level=info msg=OS Query is not ready. Will not attempt to collect FDE Active data
+time=2024-10-22 14:43:44.684000-04:00 PID=1054 level=info msg=REGISTRATION: System registration completed successfully
+time=2024-10-22 14:43:44.684105-04:00 PID=1054 level=info msg=REGISTRATION: Successfully created certificate and completed registration.
+time=2024-10-22 14:43:44.684361-04:00 PID=1054 level=info msg=enabling memory profiling on SIGUSR1
+time=2024-10-22 14:43:44.684591-04:00 PID=1054 level=info msg=---------------------
+time=2024-10-22 14:43:44.684614-04:00 PID=1054 level=info msg=Starting agent daemon
+time=2024-10-22 14:43:44.684628-04:00 PID=1054 level=info msg=---------------------
+time=2024-10-22 14:43:44.684643-04:00 PID=1054 level=info msg=Build version: 1.239.2
+time=2024-10-22 14:43:44.684657-04:00 PID=1054 level=info msg=Build date: Tue Oct 15 15:10:58 UTC 2024
+time=2024-10-22 14:43:44.684673-04:00 PID=1054 level=info msg=Loading config from /opt/jc/jcagent.conf path=/opt/jc/jcagent.conf
+time=2024-10-22 14:43:44.685257-04:00 PID=1054 level=info msg=system OS info systemInfo=Ubuntu 24.4.1
+time=2024-10-22 14:43:44.687912-04:00 PID=1054 level=info msg=Unable to get osquery version error=failed to get osquery version: bash: line 1: /opt/jc/bin/jcosqueryi: No such file or directory
+
+time=2024-10-22 14:43:44.688254-04:00 PID=1054 level=info msg=attempting to install jcosqueryi...
+time=2024-10-22 14:43:45.821352-04:00 PID=1054 level=info msg=successfully installed jcosqueryi
+time=2024-10-22 14:43:45.827192-04:00 PID=1054 level=info msg=Creating HTTP client.
+time=2024-10-22 14:43:45.827219-04:00 PID=1054 level=info msg=using new path construction method
+time=2024-10-22 14:43:45.827224-04:00 PID=1054 level=info msg=Using migrations path of file:///opt/jc//migrations
+time=2024-10-22 14:43:45.827342-04:00 PID=1054 level=info msg=HTTP client successfully initialized its TLS config.
+time=2024-10-22 14:43:45.833920-04:00 PID=1054 level=info msg=Database has no existing version. Migrating to version 20
+time=2024-10-22 14:43:45.833943-04:00 PID=1054 level=info msg=Migrating database from version 0 to 20
+time=2024-10-22 14:43:45.837825-04:00 PID=1054 level=info msg=MD5SumMonitor Init
+time=2024-10-22 14:43:45.837845-04:00 PID=1054 level=info msg=MD5SumMonitor Init complete
+time=2024-10-22 14:43:45.837871-04:00 PID=1054 level=error msg=failed to prepare statement for reporter_record select error=row value misused
+time=2024-10-22 14:43:45.837898-04:00 PID=1054 level=error msg=failed to prepare statement for reporter_record select error=row value misused
+time=2024-10-22 14:43:45.837988-04:00 PID=1054 level=warning msg=Linux Display Manager error=unable to find display manager service: readlink /etc/systemd/system/display-manager.service: no such file or directory
+time=2024-10-22 14:43:45.838362-04:00 PID=1054 level=info msg=Agent Init systemID=6717f26003c12c344ccd2599
+time=2024-10-22 14:43:45.838544-04:00 PID=1054 level=info msg=Agent Init complete
+time=2024-10-22 14:43:45.838612-04:00 PID=1054 level=info msg=Agent Start
+time=2024-10-22 14:43:45.838661-04:00 PID=1054 level=info msg=Starting dependency service
+time=2024-10-22 14:43:45.838667-04:00 PID=1054 level=info msg=JCClient Start
+time=2024-10-22 14:43:45.838671-04:00 PID=1054 level=info msg=CertificateChecker Start
+time=2024-10-22 14:43:45.838675-04:00 PID=1054 level=info msg=CertificateChecker Start complete
+time=2024-10-22 14:43:45.838722-04:00 PID=1054 level=info msg=Looking up agent dependencies for distro "ubuntu" version "24"
+time=2024-10-22 14:43:45.838737-04:00 PID=1054 level=info msg=Updating list of available packages before installing agent dependencies
+time=2024-10-22 14:43:45.838817-04:00 PID=1054 level=info msg=JCClient Start complete
+time=2024-10-22 14:43:45.838822-04:00 PID=1054 level=info msg=DevicesClient Start
+time=2024-10-22 14:43:45.839002-04:00 PID=1054 level=info msg=DevicesClient Start complete
+time=2024-10-22 14:43:45.839010-04:00 PID=1054 level=info msg=Starting metrics db queue
+time=2024-10-22 14:43:45.839014-04:00 PID=1054 level=info msg=UserManagement Start
+time=2024-10-22 14:43:45.839036-04:00 PID=1054 level=info msg=MD5SumMonitor Start
+time=2024-10-22 14:43:45.839580-04:00 PID=1054 level=error msg=update sshd user error=sshd executable not found: err=stat /usr/sbin/sshd: no such file or directory
+time=2024-10-22 14:43:45.839613-04:00 PID=1054 level=error msg=update sshd user error=sshd executable not found: err=stat /usr/sbin/sshd: no such file or directory
+time=2024-10-22 14:43:45.840799-04:00 PID=1054 level=info msg=UserManagement Start complete
+time=2024-10-22 14:43:45.840834-04:00 PID=1054 level=info msg=Dispatcher Start
+time=2024-10-22 14:43:45.840843-04:00 PID=1054 level=info msg=Dispatcher Start complete
+time=2024-10-22 14:43:45.840849-04:00 PID=1054 level=info msg=LocalGrpcServer Start
+time=2024-10-22 14:43:45.840861-04:00 PID=1054 level=warning msg=Linux Display Manager error=unable to find display manager service: readlink /etc/systemd/system/display-manager.service: no such file or directory
+time=2024-10-22 14:43:45.840941-04:00 PID=1054 level=info msg=dispatcher.poller(): Received immediate Poll request
+time=2024-10-22 14:43:45.841107-04:00 PID=1054 level=info msg=loaded softwareAppConf: {"checksum":"","softwareApps":null} function=softwareapps.manager.loadPersistedSoftwareAppConf
+time=2024-10-22 14:43:46.059162-04:00 PID=1054 level=info msg=Processing user updates
+time=2024-10-22 14:43:46.060554-04:00 PID=1054 level=info msg=Processing adding new users users=map[]
+time=2024-10-22 14:43:46.060577-04:00 PID=1054 level=info msg=Processing user takeovers takeoverUsers=map[]
+time=2024-10-22 14:43:46.060593-04:00 PID=1054 level=info msg=Processing already managed alreadyManagedUsers=map[]
+time=2024-10-22 14:43:46.060599-04:00 PID=1054 level=info msg=Processing expired password users expiredPasswordUsers=map[]
+time=2024-10-22 14:43:46.060606-04:00 PID=1054 level=info msg=Processing disabling users disabledUsers=map[]
+time=2024-10-22 14:43:46.060612-04:00 PID=1054 level=info msg=Processing lockout users lockoutUsers=map[]
+time=2024-10-22 14:43:46.060672-04:00 PID=1054 level=info msg=Processing md5sum watchers for /etc/passwd and /etc/shadow
+time=2024-10-22 14:43:46.060705-04:00 PID=1054 level=info msg=Updating the PAM JCProtect config: false
+time=2024-10-22 14:43:46.060709-04:00 PID=1054 level=info msg=Updating the PAM MFA config path=/etc/pam.d/gdm-password
+time=2024-10-22 14:43:46.060715-04:00 PID=1054 level=info msg=Updating the PAM MFA config path=/etc/pam.d/lightdm
+time=2024-10-22 14:43:46.060725-04:00 PID=1054 level=info msg=Updating the PAM MFA config path=/etc/pam.d/login
+time=2024-10-22 14:43:46.061261-04:00 PID=1054 level=info msg=Updating the PAM SSHD configuration
+time=2024-10-22 14:43:46.061286-04:00 PID=1054 level=info msg=Updating login definitions config path=/etc/login.defs
+time=2024-10-22 14:43:46.061598-04:00 PID=1054 level=info msg=Posting notification to server. notifications count: 0
+time=2024-10-22 14:43:46.119534-04:00 PID=1054 level=info msg=MQTT client expires at: 2024-11-21T18:43:46.000Z. Setting up timer to reconnect in: 647h59m59.892428897s
+time=2024-10-22 14:43:46.119564-04:00 PID=1054 level=info msg=Connecting MQTT client URL=tls://a1hrq03pdcca60-ats.iot.us-east-1.amazonaws.com:443 clientID=system-6717f26003c12c344ccd2599
+time=2024-10-22 14:43:46.378201-04:00 PID=1054 level=info msg=dispatcher.poller(): Received immediate Poll request
+time=2024-10-22 14:43:46.511474-04:00 PID=1054 level=info msg=User updates complete
+time=2024-10-22 14:43:46.511510-04:00 PID=1054 level=info msg=Processing event AUTH_CONF_CHANGED with handler User Update Handler
+time=2024-10-22 14:43:46.511537-04:00 PID=1054 level=info msg=Finished processing event AUTH_CONF_CHANGED with handler User Update Handler
+time=2024-10-22 14:43:46.511541-04:00 PID=1054 level=info msg=Processing event AUTH_CONF_CHANGED with handler Lockout Handler
+time=2024-10-22 14:43:46.511658-04:00 PID=1054 level=info msg=Finished processing event AUTH_CONF_CHANGED with handler Lockout Handler
+time=2024-10-22 14:43:46.511663-04:00 PID=1054 level=info msg=Processing event AUTH_CONF_CHANGED with handler Event Logger
+time=2024-10-22 14:43:46.511671-04:00 PID=1054 level=info msg=AuthConf Changed
+time=2024-10-22 14:43:46.511679-04:00 PID=1054 level=info msg=Finished processing event AUTH_CONF_CHANGED with handler Event Logger
+time=2024-10-22 14:43:46.645897-04:00 PID=1054 level=info msg=Installing agent dependencies ["apt-rdepends" "apt-show-versions" "coreutils" "curl" "grep" "hostname" "libc-bin" "libnss3-tools" "lsb-release" "lsof" "mawk" "passwd" "procps" "sudo" "sysvinit-utils" "tar"]
+time=2024-10-22 14:43:46.980590-04:00 PID=1054 level=info msg=LocalGrpcServer Start Complete
+time=2024-10-22 14:43:46.980609-04:00 PID=1054 level=info msg=starting policy manager
+time=2024-10-22 14:43:46.980705-04:00 PID=1054 level=info msg=policies manager received a request to update its policy conf
+time=2024-10-22 14:43:46.980716-04:00 PID=1054 level=info msg=requesting policy conf from agent server
+time=2024-10-22 14:43:46.980733-04:00 PID=1054 level=info msg=Starting DURT service... function=StartListening service=durt
+time=2024-10-22 14:43:46.980770-04:00 PID=1054 level=error msg=Unable to open a channel to the TPM error=stat /dev/tpm0: no such file or directory function=InitializeKeystore service=durt
+time=2024-10-22 14:43:46.980785-04:00 PID=1054 level=warning msg=Failed to find group ID for display-manager user error=unable to find display manager service: readlink /etc/systemd/system/display-manager.service: no such file or directory function=createListener service=durt
+time=2024-10-22 14:43:46.980816-04:00 PID=1054 level=info msg=Serving DURT requests... function=StartListening service=durt
+time=2024-10-22 14:43:47.064530-04:00 PID=1054 level=info msg=Starting systemreport service
+time=2024-10-22 14:43:47.064601-04:00 PID=1054 level=warning msg=unable to load the time of the last report
+time=2024-10-22 14:43:47.064648-04:00 PID=1054 level=info msg=systemreport.reporter: running system report
+time=2024-10-22 14:43:47.064818-04:00 PID=1054 level=warning msg=failed to read cache from disk on startup error=open /opt/jc/systemInsightsCache.json: no such file or directory
+time=2024-10-22 14:43:47.064866-04:00 PID=1054 level=warning msg=unable to load the time of the last report
+time=2024-10-22 14:43:47.064960-04:00 PID=1054 level=info msg=systemreport.reporter: running system report
+time=2024-10-22 14:43:47.064892-04:00 PID=1054 level=info msg=Agent Start complete
+time=2024-10-22 14:43:47.065145-04:00 PID=1054 level=info msg=AgentVersion=1.239.2
+time=2024-10-22 14:43:47.064930-04:00 PID=1054 level=warning msg=failed to read conf from disk on startup error=open /opt/jc/systemInsightsConf.json: no such file or directory
+time=2024-10-22 14:43:47.065211-04:00 PID=1054 level=info msg=bypassing system insights boot delay
+time=2024-10-22 14:43:47.066809-04:00 PID=1054 level=info msg=linuxSshdParamsCollector.Collect: running /usr/sbin/sshd -T: Exec error: exit status 127
+bash: line 1: /usr/sbin/sshd: No such file or directory
+ error=exit status 127
+time=2024-10-22 14:43:47.066926-04:00 PID=1054 level=error msg=systemreport.reporter: error collecting data error=exit status 127
+time=2024-10-22 14:43:47.066989-04:00 PID=1054 level=info msg=systemreport: sending system report
+time=2024-10-22 14:43:47.067030-04:00 PID=1054 level=info msg=systemreport: posting report to server
+time=2024-10-22 14:43:47.099570-04:00 PID=1054 level=info msg=MQTT push client received message on topic. Queueing poll mqttTopics=systems/6717f26003c12c344ccd2599/state
+time=2024-10-22 14:43:47.099607-04:00 PID=1054 level=info msg=dispatcher.poller(): Received immediate Poll request
+time=2024-10-22 14:43:47.190551-04:00 PID=1054 level=info msg=policies manager received a request to force update policies
+time=2024-10-22 14:43:47.190786-04:00 PID=1054 level=info msg=Incoming Policy Conf:
+          Bundle: &{Checksum:1e6a1df7d5076861afda55490faeb1cf URL:https://cdn02.jumpcloud.com/policies/v5.66.0/jumpcloud-policies-linux-v5.66.0.tgz}
+        Checksum: 78d50953e6ba0e020caff82724365e10609f21e70639c86b03d4c34dd4fb9fdf
+        Policies:
+
+time=2024-10-22 14:43:47.190837-04:00 PID=1054 level=info msg=updating policies with: force=true, valid=false
+time=2024-10-22 14:43:47.227925-04:00 PID=1054 level=error msg=error when closing file error=close /opt/jc/policies/jumpcloud-policies.tgz: file already closed path=/opt/jc/policies/jumpcloud-policies.tgz
+time=2024-10-22 14:43:47.228011-04:00 PID=1054 level=info msg=downloaded policies bundle: https://cdn02.jumpcloud.com/policies/v5.66.0/jumpcloud-policies-linux-v5.66.0.tgz
+time=2024-10-22 14:43:47.230872-04:00 PID=1054 level=info msg=updated in memory policy conf with incoming conf
+time=2024-10-22 14:43:47.230924-04:00 PID=1054 level=info msg=wrote incoming conf to disk
+time=2024-10-22 14:43:47.232054-04:00 PID=1054 level=info msg=policies manager now applying policies
+time=2024-10-22 14:43:47.232081-04:00 PID=1054 level=info msg=policies manager received a request to update its policy conf
+time=2024-10-22 14:43:47.232085-04:00 PID=1054 level=info msg=requesting policy conf from agent server
+time=2024-10-22 14:43:47.243793-04:00 PID=1054 level=info msg=system insights manager successfully updated its conf
+time=2024-10-22 14:43:47.337860-04:00 PID=1054 level=info msg=policies manager received a request to force update policies
+time=2024-10-22 14:43:47.337947-04:00 PID=1054 level=info msg=Incoming Policy Conf:
+          Bundle: &{Checksum:1e6a1df7d5076861afda55490faeb1cf URL:https://cdn02.jumpcloud.com/policies/v5.66.0/jumpcloud-policies-linux-v5.66.0.tgz}
+        Checksum: 78d50953e6ba0e020caff82724365e10609f21e70639c86b03d4c34dd4fb9fdf
+        Policies:
+
+time=2024-10-22 14:43:47.337960-04:00 PID=1054 level=info msg=updating policies with: force=true, valid=false
+time=2024-10-22 14:43:47.369660-04:00 PID=1054 level=error msg=error when closing file error=close /opt/jc/policies/jumpcloud-policies.tgz: file already closed path=/opt/jc/policies/jumpcloud-policies.tgz
+time=2024-10-22 14:43:47.370355-04:00 PID=1054 level=info msg=downloaded policies bundle: https://cdn02.jumpcloud.com/policies/v5.66.0/jumpcloud-policies-linux-v5.66.0.tgz
+time=2024-10-22 14:43:47.371805-04:00 PID=1054 level=info msg=updated in memory policy conf with incoming conf
+time=2024-10-22 14:43:47.371904-04:00 PID=1054 level=info msg=wrote incoming conf to disk
+time=2024-10-22 14:43:47.372983-04:00 PID=1054 level=info msg=policies manager now applying policies
+time=2024-10-22 14:43:47.632551-04:00 PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/login.dpkg-new": CREATE
+time=2024-10-22 14:43:47.632647-04:00 PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/login.dpkg-new": WRITE
+time=2024-10-22 14:43:47.632818-04:00 PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/login.dpkg-new": CHMOD
+time=2024-10-22 14:43:47.684495-04:00 PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/login.dpkg-new": CHMOD
+time=2024-10-22 14:43:47.684521-04:00 PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/login.dpkg-new": REMOVE
+time=2024-10-22 14:43:47.729871-04:00 PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/chfn.dpkg-new": CREATE
+time=2024-10-22 14:43:47.729906-04:00 PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/chfn.dpkg-new": WRITE
+time=2024-10-22 14:43:47.729916-04:00 PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/chfn.dpkg-new": CHMOD
+time=2024-10-22 14:43:47.729920-04:00 PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/chfn.dpkg-new": CHMOD
+time=2024-10-22 14:43:47.729926-04:00 PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/chpasswd.dpkg-new": CREATE
+time=2024-10-22 14:43:47.729929-04:00 PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/chpasswd.dpkg-new": WRITE
+time=2024-10-22 14:43:47.729934-04:00 PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/chpasswd.dpkg-new": CHMOD
+time=2024-10-22 14:43:47.729938-04:00 PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/chsh.dpkg-new": CREATE
+time=2024-10-22 14:43:47.729943-04:00 PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/chsh.dpkg-new": WRITE
+time=2024-10-22 14:43:47.729947-04:00 PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/chsh.dpkg-new": CHMOD
+time=2024-10-22 14:43:47.729952-04:00 PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/newusers.dpkg-new": CREATE
+time=2024-10-22 14:43:47.729958-04:00 PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/newusers.dpkg-new": WRITE
+time=2024-10-22 14:43:47.729964-04:00 PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/newusers.dpkg-new": CHMOD
+time=2024-10-22 14:43:47.729968-04:00 PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/passwd.dpkg-new": CREATE
+time=2024-10-22 14:43:47.729986-04:00 PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/passwd.dpkg-new": WRITE
+time=2024-10-22 14:43:47.730007-04:00 PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/passwd.dpkg-new": CHMOD
+time=2024-10-22 14:43:47.817651-04:00 PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/chfn.dpkg-new": REMOVE
+time=2024-10-22 14:43:47.819841-04:00 PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/chpasswd.dpkg-new": REMOVE
+time=2024-10-22 14:43:47.822061-04:00 PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/chsh.dpkg-new": REMOVE
+time=2024-10-22 14:43:47.824067-04:00 PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/newusers.dpkg-new": REMOVE
+time=2024-10-22 14:43:47.826244-04:00 PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/passwd.dpkg-new": REMOVE
+time=2024-10-22 14:43:50.597055-04:00 PID=1054 level=info msg=Successfully installed agent dependencies
+time=2024-10-22 14:43:50.597079-04:00 PID=1054 level=info msg=Stopping dependency service
+time=2024-10-22 14:43:50.599262-04:00 PID=1054 level=info msg=found legacy $IncludeConfig directive: $IncludeConfig /etc/rsyslog.d/* function=findRsyslogConfFileIncludesMatches path=/etc/rsyslog.conf
+time=2024-10-22 14:43:50.604548-04:00 PID=1054 level=info msg=service is not present function=fixAuditLogs service=auditd
+time=2024-10-22 14:43:52.100275-04:00 PID=1054 level=warning msg=dispatcher.poller(): Received poll interval in a short period of time (less than 10 s since last poll)
+time=2024-10-22 14:43:52.178563-04:00 PID=1054 level=info msg=Loaded configuration for agent systemID=6717f26003c12c344ccd2599
+time=2024-10-22 14:43:52.178658-04:00 PID=1054 level=info msg=UserManagement Start
+time=2024-10-22 14:43:52.178665-04:00 PID=1054 level=error msg=evaluateUM failed error=um.Start() called after user manager was already started
+time=2024-10-22 14:43:52.178689-04:00 PID=1054 level=info msg=streaming logger send interval set to 15m0s seconds
+time=2024-10-22 14:43:52.178704-04:00 PID=1054 level=info msg=streaming logger sender set
+time=2024-10-22 14:43:52.178714-04:00 PID=1054 level=info msg=enabling streaming logger
+time=2024-10-22 14:43:52.178691-04:00 PID=1054 level=info msg=streaming logger batch size set to 1048576 bytes
+time=2024-10-22 14:43:52.368727-04:00 PID=1054 level=info msg=linuxSshdParamsCollector.Collect: running /usr/sbin/sshd -T: Exec error: exit status 127
+bash: line 1: /usr/sbin/sshd: No such file or directory
+ error=exit status 127
+time=2024-10-22 14:43:52.368768-04:00 PID=1054 level=error msg=systemreport.reporter: error collecting data error=exit status 127
+time=2024-10-22 14:43:52.369710-04:00 PID=1054 level=error msg=systemreport.reporter: error collecting data error=exit status 127
+time=2024-10-22 14:43:52.740658-04:00 PID=1054 level=info msg=systemreport: sending system report
+time=2024-10-22 14:43:52.740767-04:00 PID=1054 level=info msg=systemreport: posting report to server
+time=2024-10-22 14:43:57.100624-04:00 PID=1054 level=warning msg=dispatcher.poller(): Received poll interval in a short period of time (less than 10 s since last poll)
+time=2024-10-22 14:43:57.185019-04:00 PID=1054 level=info msg=policies manager received a ClearWorkflows request to update workflow policies
+time=2024-10-22 14:44:02.101709-04:00 PID=1054 level=warning msg=dispatcher.poller(): Received poll interval in a short period of time (less than 10 s since last poll)
+time=2024-10-22 15:03:57.391571-04:00 PID=1054 level=error msg=[MQTT] [pinger]   pingresp not received, disconnecting
+
+time=2024-10-22 15:04:02.856113-04:00 PID=1054 level=info msg=dispatcher.poller(): Received immediate Poll request
+time=2024-10-22 15:08:53.186814-04:00 PID=1054 level=info msg=client.MessageHandler(): Sending log snapshot
+time=2024-10-22 15:23:53.189180-04:00 PID=1054 level=info msg=client.MessageHandler(): Sending log snapshot
+time=2024-10-22 15:38:53.186394-04:00 PID=1054 level=info msg=client.MessageHandler(): Sending log snapshot
+time=2024-10-22 15:44:03.092198-04:00 PID=1054 level=warning msg=Fallback Poll was required to handle the following directive: update_system_insights_conf
+time=2024-10-22 15:44:03.296599-04:00 PID=1054 level=info msg=system insights manager successfully updated its conf
+time=2024-10-22 15:44:07.861455-04:00 PID=1054 level=warning msg=dispatcher.poller(): Received poll interval in a short period of time (less than 10 s since last poll)
+time=2024-10-22 15:53:53.186615-04:00 PID=1054 level=info msg=client.MessageHandler(): Sending log snapshot
+time=2024-10-22 16:08:53.185968-04:00 PID=1054 level=info msg=client.MessageHandler(): Sending log snapshot
+time=2024-10-22 16:23:53.186452-04:00 PID=1054 level=info msg=client.MessageHandler(): Sending log snapshot
+time=2024-10-22 16:38:53.186268-04:00 PID=1054 level=info msg=client.MessageHandler(): Sending log snapshot
+time=2024-10-22 16:53:53.185955-04:00 PID=1054 level=info msg=client.MessageHandler(): Sending log snapshot
+time=2024-10-22 16:53:53.748771-04:00 PID=1054 level=info msg=systemreport.reporter: running system report
+time=2024-10-22 16:53:59.081421-04:00 PID=1054 level=info msg=linuxSshdParamsCollector.Collect: running /usr/sbin/sshd -T: Exec error: exit status 127
+bash: line 1: /usr/sbin/sshd: No such file or directory
+ error=exit status 127
+time=2024-10-22 16:53:59.081591-04:00 PID=1054 level=error msg=systemreport.reporter: error collecting data error=exit status 127
+time=2024-10-22 16:53:59.082726-04:00 PID=1054 level=error msg=systemreport.reporter: error collecting data error=exit status 127
+time=2024-10-22 16:53:59.826807-04:00 PID=1054 level=info msg=systemreport: sending system report
+time=2024-10-22 16:53:59.827020-04:00 PID=1054 level=info msg=systemreport: posting report to server
+time=2024-10-22 17:08:53.186297-04:00 PID=1054 level=info msg=client.MessageHandler(): Sending log snapshot
+time=2024-10-22 17:23:53.188308-04:00 PID=1054 level=info msg=client.MessageHandler(): Sending log snapshot
+time=2024-10-22 17:38:53.186002-04:00 PID=1054 level=info msg=client.MessageHandler(): Sending log snapshot
+time=2024-10-22 17:53:53.186613-04:00 PID=1054 level=info msg=client.MessageHandler(): Sending log snapshot
+time=2024-10-23 09:13:19.648932-04:00 PID=1054 level=error msg=[MQTT] [pinger]   pingresp not received, disconnecting
+
+time=2024-10-23 09:13:24.910932-04:00 PID=1054 level=info msg=dispatcher.poller(): Received immediate Poll request
+time=2024-10-23 10:20:24.935207-04:00 PID=1054 level=error msg=[MQTT] [pinger]   pingresp not received, disconnecting
+
+time=2024-10-23 10:20:30.427166-04:00 PID=1054 level=info msg=dispatcher.poller(): Received immediate Poll request
+time=2024-10-23 10:22:03.546092-04:00 PID=1054 level=info msg=client.MessageHandler(): Sending log snapshot
