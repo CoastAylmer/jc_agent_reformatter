@@ -7,7 +7,7 @@ int main(){
     std::string logFilePath = "/var/log/jcagent.log";
     
     // define output path for txt file
-    std::string outputFilePath = "/home/maylmer/projects/log-reformatter/jcagent_output.txt";
+    std::string outputFilePath = "jcagent_output.txt";
 
     //Open the log file for reading
     std::ifstream logFile(logFilePath);
@@ -19,7 +19,7 @@ int main(){
     //Open the output file for writing
     std::ofstream outputFile(outputFilePath);
     if(!outputFile.is_open()) {
-        std::cerr << "Error creating output file:" << outputFilePath << std::endl;
+        std::cerr << "Error creating output file:" <./< outputFilePath << std::endl;
         return 1;
 
     }
