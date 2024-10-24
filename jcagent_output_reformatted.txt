@@ -1,0 +1,226 @@
+Oct 22 14:43:37 JC PID=1054 level=info msg=Could not load registration attempts counter. Assuming this is the first attempt and not applying backoff
+Oct 22 14:43:37 JC PID=1054 level=info msg=Certificate read failed error=Could not read the client certificate PEM file '/opt/jc/client.crt', err='Could not read PEM file, err='open /opt/jc/client.crt: no such file or directory''
+Oct 22 14:43:37 JC PID=1054 level=info msg=REGISTRATION: No existing valid certificate found, initializing it
+Oct 22 14:43:37 JC PID=1054 level=info msg=REGISTRATION: Creating client certificates
+Oct 22 14:43:38 JC PID=1054 level=info msg=REGISTRATION: Client certificates created and signed successfully
+Oct 22 14:43:39 JC PID=1054 level=info msg=REGISTRATION: Registering new system
+Oct 22 14:43:39 JC PID=1054 level=info msg=systemreport.reporter: running system report
+Oct 22 14:43:39 JC PID=1054 level=error msg=systemreport.reporter: error collecting data error=Get "": unsupported protocol scheme ""
+Oct 22 14:43:44 JC PID=1054 level=info msg=linuxSshdParamsCollector.Collect: running /usr/sbin/sshd -T: Exec error: exit status 127
+bash: line 1: /usr/sbin/sshd: No such file or directory
+ error=exit status 127
+Oct 22 14:43:44 JC PID=1054 level=error msg=systemreport.reporter: error collecting data error=exit status 127
+Oct 22 14:43:44 JC PID=1054 level=error msg=systemreport.reporter: error collecting data error=exit status 127
+Oct 22 14:43:44 JC PID=1054 level=error msg=Error retrieving libNSS version: "dpkg-query -W --showformat='${VERSION}' libnss3" error=exit status 1
+Oct 22 14:43:44 JC PID=1054 level=error msg=systemreport.reporter: error collecting data error=Error collecting NSS Version: exit status 1
+Oct 22 14:43:44 JC PID=1054 level=info msg=OS Query is not ready. Will not attempt to collect FDE Active data
+Oct 22 14:43:44 JC PID=1054 level=info msg=REGISTRATION: System registration completed successfully
+Oct 22 14:43:44 JC PID=1054 level=info msg=REGISTRATION: Successfully created certificate and completed registration.
+Oct 22 14:43:44 JC PID=1054 level=info msg=enabling memory profiling on SIGUSR1
+Oct 22 14:43:44 JC PID=1054 level=info msg=---------------------
+Oct 22 14:43:44 JC PID=1054 level=info msg=Starting agent daemon
+Oct 22 14:43:44 JC PID=1054 level=info msg=---------------------
+Oct 22 14:43:44 JC PID=1054 level=info msg=Build version: 1.239.2
+Oct 22 14:43:44 JC PID=1054 level=info msg=Build date: Tue Oct 15 15:10:58 UTC 2024
+Oct 22 14:43:44 JC PID=1054 level=info msg=Loading config from /opt/jc/jcagent.conf path=/opt/jc/jcagent.conf
+Oct 22 14:43:44 JC PID=1054 level=info msg=system OS info systemInfo=Ubuntu 24.4.1
+Oct 22 14:43:44 JC PID=1054 level=info msg=Unable to get osquery version error=failed to get osquery version: bash: line 1: /opt/jc/bin/jcosqueryi: No such file or directory
+
+Oct 22 14:43:44 JC PID=1054 level=info msg=attempting to install jcosqueryi...
+Oct 22 14:43:45 JC PID=1054 level=info msg=successfully installed jcosqueryi
+Oct 22 14:43:45 JC PID=1054 level=info msg=Creating HTTP client.
+Oct 22 14:43:45 JC PID=1054 level=info msg=using new path construction method
+Oct 22 14:43:45 JC PID=1054 level=info msg=Using migrations path of file:///opt/jc//migrations
+Oct 22 14:43:45 JC PID=1054 level=info msg=HTTP client successfully initialized its TLS config.
+Oct 22 14:43:45 JC PID=1054 level=info msg=Database has no existing version. Migrating to version 20
+Oct 22 14:43:45 JC PID=1054 level=info msg=Migrating database from version 0 to 20
+Oct 22 14:43:45 JC PID=1054 level=info msg=MD5SumMonitor Init
+Oct 22 14:43:45 JC PID=1054 level=info msg=MD5SumMonitor Init complete
+Oct 22 14:43:45 JC PID=1054 level=error msg=failed to prepare statement for reporter_record select error=row value misused
+Oct 22 14:43:45 JC PID=1054 level=error msg=failed to prepare statement for reporter_record select error=row value misused
+Oct 22 14:43:45 JC PID=1054 level=warning msg=Linux Display Manager error=unable to find display manager service: readlink /etc/systemd/system/display-manager.service: no such file or directory
+Oct 22 14:43:45 JC PID=1054 level=info msg=Agent Init systemID=6717f26003c12c344ccd2599
+Oct 22 14:43:45 JC PID=1054 level=info msg=Agent Init complete
+Oct 22 14:43:45 JC PID=1054 level=info msg=Agent Start
+Oct 22 14:43:45 JC PID=1054 level=info msg=Starting dependency service
+Oct 22 14:43:45 JC PID=1054 level=info msg=JCClient Start
+Oct 22 14:43:45 JC PID=1054 level=info msg=CertificateChecker Start
+Oct 22 14:43:45 JC PID=1054 level=info msg=CertificateChecker Start complete
+Oct 22 14:43:45 JC PID=1054 level=info msg=Looking up agent dependencies for distro "ubuntu" version "24"
+Oct 22 14:43:45 JC PID=1054 level=info msg=Updating list of available packages before installing agent dependencies
+Oct 22 14:43:45 JC PID=1054 level=info msg=JCClient Start complete
+Oct 22 14:43:45 JC PID=1054 level=info msg=DevicesClient Start
+Oct 22 14:43:45 JC PID=1054 level=info msg=DevicesClient Start complete
+Oct 22 14:43:45 JC PID=1054 level=info msg=Starting metrics db queue
+Oct 22 14:43:45 JC PID=1054 level=info msg=UserManagement Start
+Oct 22 14:43:45 JC PID=1054 level=info msg=MD5SumMonitor Start
+Oct 22 14:43:45 JC PID=1054 level=error msg=update sshd user error=sshd executable not found: err=stat /usr/sbin/sshd: no such file or directory
+Oct 22 14:43:45 JC PID=1054 level=error msg=update sshd user error=sshd executable not found: err=stat /usr/sbin/sshd: no such file or directory
+Oct 22 14:43:45 JC PID=1054 level=info msg=UserManagement Start complete
+Oct 22 14:43:45 JC PID=1054 level=info msg=Dispatcher Start
+Oct 22 14:43:45 JC PID=1054 level=info msg=Dispatcher Start complete
+Oct 22 14:43:45 JC PID=1054 level=info msg=LocalGrpcServer Start
+Oct 22 14:43:45 JC PID=1054 level=warning msg=Linux Display Manager error=unable to find display manager service: readlink /etc/systemd/system/display-manager.service: no such file or directory
+Oct 22 14:43:45 JC PID=1054 level=info msg=dispatcher.poller(): Received immediate Poll request
+Oct 22 14:43:45 JC PID=1054 level=info msg=loaded softwareAppConf: {"checksum":"","softwareApps":null} function=softwareapps.manager.loadPersistedSoftwareAppConf
+Oct 22 14:43:46 JC PID=1054 level=info msg=Processing user updates
+Oct 22 14:43:46 JC PID=1054 level=info msg=Processing adding new users users=map[]
+Oct 22 14:43:46 JC PID=1054 level=info msg=Processing user takeovers takeoverUsers=map[]
+Oct 22 14:43:46 JC PID=1054 level=info msg=Processing already managed alreadyManagedUsers=map[]
+Oct 22 14:43:46 JC PID=1054 level=info msg=Processing expired password users expiredPasswordUsers=map[]
+Oct 22 14:43:46 JC PID=1054 level=info msg=Processing disabling users disabledUsers=map[]
+Oct 22 14:43:46 JC PID=1054 level=info msg=Processing lockout users lockoutUsers=map[]
+Oct 22 14:43:46 JC PID=1054 level=info msg=Processing md5sum watchers for /etc/passwd and /etc/shadow
+Oct 22 14:43:46 JC PID=1054 level=info msg=Updating the PAM JCProtect config: false
+Oct 22 14:43:46 JC PID=1054 level=info msg=Updating the PAM MFA config path=/etc/pam.d/gdm-password
+Oct 22 14:43:46 JC PID=1054 level=info msg=Updating the PAM MFA config path=/etc/pam.d/lightdm
+Oct 22 14:43:46 JC PID=1054 level=info msg=Updating the PAM MFA config path=/etc/pam.d/login
+Oct 22 14:43:46 JC PID=1054 level=info msg=Updating the PAM SSHD configuration
+Oct 22 14:43:46 JC PID=1054 level=info msg=Updating login definitions config path=/etc/login.defs
+Oct 22 14:43:46 JC PID=1054 level=info msg=Posting notification to server. notifications count: 0
+Oct 22 14:43:46 JC PID=1054 level=info msg=MQTT client expires at: 2024-11-21T18:43:46.000Z. Setting up timer to reconnect in: 647h59m59.892428897s
+Oct 22 14:43:46 JC PID=1054 level=info msg=Connecting MQTT client URL=tls://a1hrq03pdcca60-ats.iot.us-east-1.amazonaws.com:443 clientID=system-6717f26003c12c344ccd2599
+Oct 22 14:43:46 JC PID=1054 level=info msg=dispatcher.poller(): Received immediate Poll request
+Oct 22 14:43:46 JC PID=1054 level=info msg=User updates complete
+Oct 22 14:43:46 JC PID=1054 level=info msg=Processing event AUTH_CONF_CHANGED with handler User Update Handler
+Oct 22 14:43:46 JC PID=1054 level=info msg=Finished processing event AUTH_CONF_CHANGED with handler User Update Handler
+Oct 22 14:43:46 JC PID=1054 level=info msg=Processing event AUTH_CONF_CHANGED with handler Lockout Handler
+Oct 22 14:43:46 JC PID=1054 level=info msg=Finished processing event AUTH_CONF_CHANGED with handler Lockout Handler
+Oct 22 14:43:46 JC PID=1054 level=info msg=Processing event AUTH_CONF_CHANGED with handler Event Logger
+Oct 22 14:43:46 JC PID=1054 level=info msg=AuthConf Changed
+Oct 22 14:43:46 JC PID=1054 level=info msg=Finished processing event AUTH_CONF_CHANGED with handler Event Logger
+Oct 22 14:43:46 JC PID=1054 level=info msg=Installing agent dependencies ["apt-rdepends" "apt-show-versions" "coreutils" "curl" "grep" "hostname" "libc-bin" "libnss3-tools" "lsb-release" "lsof" "mawk" "passwd" "procps" "sudo" "sysvinit-utils" "tar"]
+Oct 22 14:43:46 JC PID=1054 level=info msg=LocalGrpcServer Start Complete
+Oct 22 14:43:46 JC PID=1054 level=info msg=starting policy manager
+Oct 22 14:43:46 JC PID=1054 level=info msg=policies manager received a request to update its policy conf
+Oct 22 14:43:46 JC PID=1054 level=info msg=requesting policy conf from agent server
+Oct 22 14:43:46 JC PID=1054 level=info msg=Starting DURT service... function=StartListening service=durt
+Oct 22 14:43:46 JC PID=1054 level=error msg=Unable to open a channel to the TPM error=stat /dev/tpm0: no such file or directory function=InitializeKeystore service=durt
+Oct 22 14:43:46 JC PID=1054 level=warning msg=Failed to find group ID for display-manager user error=unable to find display manager service: readlink /etc/systemd/system/display-manager.service: no such file or directory function=createListener service=durt
+Oct 22 14:43:46 JC PID=1054 level=info msg=Serving DURT requests... function=StartListening service=durt
+Oct 22 14:43:47 JC PID=1054 level=info msg=Starting systemreport service
+Oct 22 14:43:47 JC PID=1054 level=warning msg=unable to load the time of the last report
+Oct 22 14:43:47 JC PID=1054 level=info msg=systemreport.reporter: running system report
+Oct 22 14:43:47 JC PID=1054 level=warning msg=failed to read cache from disk on startup error=open /opt/jc/systemInsightsCache.json: no such file or directory
+Oct 22 14:43:47 JC PID=1054 level=warning msg=unable to load the time of the last report
+Oct 22 14:43:47 JC PID=1054 level=info msg=systemreport.reporter: running system report
+Oct 22 14:43:47 JC PID=1054 level=info msg=Agent Start complete
+Oct 22 14:43:47 JC PID=1054 level=info msg=AgentVersion=1.239.2
+Oct 22 14:43:47 JC PID=1054 level=warning msg=failed to read conf from disk on startup error=open /opt/jc/systemInsightsConf.json: no such file or directory
+Oct 22 14:43:47 JC PID=1054 level=info msg=bypassing system insights boot delay
+Oct 22 14:43:47 JC PID=1054 level=info msg=linuxSshdParamsCollector.Collect: running /usr/sbin/sshd -T: Exec error: exit status 127
+bash: line 1: /usr/sbin/sshd: No such file or directory
+ error=exit status 127
+Oct 22 14:43:47 JC PID=1054 level=error msg=systemreport.reporter: error collecting data error=exit status 127
+Oct 22 14:43:47 JC PID=1054 level=info msg=systemreport: sending system report
+Oct 22 14:43:47 JC PID=1054 level=info msg=systemreport: posting report to server
+Oct 22 14:43:47 JC PID=1054 level=info msg=MQTT push client received message on topic. Queueing poll mqttTopics=systems/6717f26003c12c344ccd2599/state
+Oct 22 14:43:47 JC PID=1054 level=info msg=dispatcher.poller(): Received immediate Poll request
+Oct 22 14:43:47 JC PID=1054 level=info msg=policies manager received a request to force update policies
+Oct 22 14:43:47 JC PID=1054 level=info msg=Incoming Policy Conf:
+          Bundle: &{Checksum:1e6a1df7d5076861afda55490faeb1cf URL:https://cdn02.jumpcloud.com/policies/v5.66.0/jumpcloud-policies-linux-v5.66.0.tgz}
+        Checksum: 78d50953e6ba0e020caff82724365e10609f21e70639c86b03d4c34dd4fb9fdf
+        Policies:
+
+Oct 22 14:43:47 JC PID=1054 level=info msg=updating policies with: force=true, valid=false
+Oct 22 14:43:47 JC PID=1054 level=error msg=error when closing file error=close /opt/jc/policies/jumpcloud-policies.tgz: file already closed path=/opt/jc/policies/jumpcloud-policies.tgz
+Oct 22 14:43:47 JC PID=1054 level=info msg=downloaded policies bundle: https://cdn02.jumpcloud.com/policies/v5.66.0/jumpcloud-policies-linux-v5.66.0.tgz
+Oct 22 14:43:47 JC PID=1054 level=info msg=updated in memory policy conf with incoming conf
+Oct 22 14:43:47 JC PID=1054 level=info msg=wrote incoming conf to disk
+Oct 22 14:43:47 JC PID=1054 level=info msg=policies manager now applying policies
+Oct 22 14:43:47 JC PID=1054 level=info msg=policies manager received a request to update its policy conf
+Oct 22 14:43:47 JC PID=1054 level=info msg=requesting policy conf from agent server
+Oct 22 14:43:47 JC PID=1054 level=info msg=system insights manager successfully updated its conf
+Oct 22 14:43:47 JC PID=1054 level=info msg=policies manager received a request to force update policies
+Oct 22 14:43:47 JC PID=1054 level=info msg=Incoming Policy Conf:
+          Bundle: &{Checksum:1e6a1df7d5076861afda55490faeb1cf URL:https://cdn02.jumpcloud.com/policies/v5.66.0/jumpcloud-policies-linux-v5.66.0.tgz}
+        Checksum: 78d50953e6ba0e020caff82724365e10609f21e70639c86b03d4c34dd4fb9fdf
+        Policies:
+
+Oct 22 14:43:47 JC PID=1054 level=info msg=updating policies with: force=true, valid=false
+Oct 22 14:43:47 JC PID=1054 level=error msg=error when closing file error=close /opt/jc/policies/jumpcloud-policies.tgz: file already closed path=/opt/jc/policies/jumpcloud-policies.tgz
+Oct 22 14:43:47 JC PID=1054 level=info msg=downloaded policies bundle: https://cdn02.jumpcloud.com/policies/v5.66.0/jumpcloud-policies-linux-v5.66.0.tgz
+Oct 22 14:43:47 JC PID=1054 level=info msg=updated in memory policy conf with incoming conf
+Oct 22 14:43:47 JC PID=1054 level=info msg=wrote incoming conf to disk
+Oct 22 14:43:47 JC PID=1054 level=info msg=policies manager now applying policies
+Oct 22 14:43:47 JC PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/login.dpkg-new": CREATE
+Oct 22 14:43:47 JC PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/login.dpkg-new": WRITE
+Oct 22 14:43:47 JC PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/login.dpkg-new": CHMOD
+Oct 22 14:43:47 JC PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/login.dpkg-new": CHMOD
+Oct 22 14:43:47 JC PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/login.dpkg-new": REMOVE
+Oct 22 14:43:47 JC PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/chfn.dpkg-new": CREATE
+Oct 22 14:43:47 JC PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/chfn.dpkg-new": WRITE
+Oct 22 14:43:47 JC PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/chfn.dpkg-new": CHMOD
+Oct 22 14:43:47 JC PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/chfn.dpkg-new": CHMOD
+Oct 22 14:43:47 JC PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/chpasswd.dpkg-new": CREATE
+Oct 22 14:43:47 JC PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/chpasswd.dpkg-new": WRITE
+Oct 22 14:43:47 JC PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/chpasswd.dpkg-new": CHMOD
+Oct 22 14:43:47 JC PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/chsh.dpkg-new": CREATE
+Oct 22 14:43:47 JC PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/chsh.dpkg-new": WRITE
+Oct 22 14:43:47 JC PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/chsh.dpkg-new": CHMOD
+Oct 22 14:43:47 JC PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/newusers.dpkg-new": CREATE
+Oct 22 14:43:47 JC PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/newusers.dpkg-new": WRITE
+Oct 22 14:43:47 JC PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/newusers.dpkg-new": CHMOD
+Oct 22 14:43:47 JC PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/passwd.dpkg-new": CREATE
+Oct 22 14:43:47 JC PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/passwd.dpkg-new": WRITE
+Oct 22 14:43:47 JC PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/passwd.dpkg-new": CHMOD
+Oct 22 14:43:47 JC PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/chfn.dpkg-new": REMOVE
+Oct 22 14:43:47 JC PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/chpasswd.dpkg-new": REMOVE
+Oct 22 14:43:47 JC PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/chsh.dpkg-new": REMOVE
+Oct 22 14:43:47 JC PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/newusers.dpkg-new": REMOVE
+Oct 22 14:43:47 JC PID=1054 level=info msg=Got pam config file event:"/etc/pam.d/passwd.dpkg-new": REMOVE
+Oct 22 14:43:50 JC PID=1054 level=info msg=Successfully installed agent dependencies
+Oct 22 14:43:50 JC PID=1054 level=info msg=Stopping dependency service
+Oct 22 14:43:50 JC PID=1054 level=info msg=found legacy $IncludeConfig directive: $IncludeConfig /etc/rsyslog.d/* function=findRsyslogConfFileIncludesMatches path=/etc/rsyslog.conf
+Oct 22 14:43:50 JC PID=1054 level=info msg=service is not present function=fixAuditLogs service=auditd
+Oct 22 14:43:52 JC PID=1054 level=warning msg=dispatcher.poller(): Received poll interval in a short period of time (less than 10 s since last poll)
+Oct 22 14:43:52 JC PID=1054 level=info msg=Loaded configuration for agent systemID=6717f26003c12c344ccd2599
+Oct 22 14:43:52 JC PID=1054 level=info msg=UserManagement Start
+Oct 22 14:43:52 JC PID=1054 level=error msg=evaluateUM failed error=um.Start() called after user manager was already started
+Oct 22 14:43:52 JC PID=1054 level=info msg=streaming logger send interval set to 15m0s seconds
+Oct 22 14:43:52 JC PID=1054 level=info msg=streaming logger sender set
+Oct 22 14:43:52 JC PID=1054 level=info msg=enabling streaming logger
+Oct 22 14:43:52 JC PID=1054 level=info msg=streaming logger batch size set to 1048576 bytes
+Oct 22 14:43:52 JC PID=1054 level=info msg=linuxSshdParamsCollector.Collect: running /usr/sbin/sshd -T: Exec error: exit status 127
+bash: line 1: /usr/sbin/sshd: No such file or directory
+ error=exit status 127
+Oct 22 14:43:52 JC PID=1054 level=error msg=systemreport.reporter: error collecting data error=exit status 127
+Oct 22 14:43:52 JC PID=1054 level=error msg=systemreport.reporter: error collecting data error=exit status 127
+Oct 22 14:43:52 JC PID=1054 level=info msg=systemreport: sending system report
+Oct 22 14:43:52 JC PID=1054 level=info msg=systemreport: posting report to server
+Oct 22 14:43:57 JC PID=1054 level=warning msg=dispatcher.poller(): Received poll interval in a short period of time (less than 10 s since last poll)
+Oct 22 14:43:57 JC PID=1054 level=info msg=policies manager received a ClearWorkflows request to update workflow policies
+Oct 22 14:44:02 JC PID=1054 level=warning msg=dispatcher.poller(): Received poll interval in a short period of time (less than 10 s since last poll)
+Oct 22 15:03:57 JC PID=1054 level=error msg=[MQTT] [pinger]   pingresp not received, disconnecting
+
+Oct 22 15:04:02 JC PID=1054 level=info msg=dispatcher.poller(): Received immediate Poll request
+Oct 22 15:08:53 JC PID=1054 level=info msg=client.MessageHandler(): Sending log snapshot
+Oct 22 15:23:53 JC PID=1054 level=info msg=client.MessageHandler(): Sending log snapshot
+Oct 22 15:38:53 JC PID=1054 level=info msg=client.MessageHandler(): Sending log snapshot
+Oct 22 15:44:03 JC PID=1054 level=warning msg=Fallback Poll was required to handle the following directive: update_system_insights_conf
+Oct 22 15:44:03 JC PID=1054 level=info msg=system insights manager successfully updated its conf
+Oct 22 15:44:07 JC PID=1054 level=warning msg=dispatcher.poller(): Received poll interval in a short period of time (less than 10 s since last poll)
+Oct 22 15:53:53 JC PID=1054 level=info msg=client.MessageHandler(): Sending log snapshot
+Oct 22 16:08:53 JC PID=1054 level=info msg=client.MessageHandler(): Sending log snapshot
+Oct 22 16:23:53 JC PID=1054 level=info msg=client.MessageHandler(): Sending log snapshot
+Oct 22 16:38:53 JC PID=1054 level=info msg=client.MessageHandler(): Sending log snapshot
+Oct 22 16:53:53 JC PID=1054 level=info msg=client.MessageHandler(): Sending log snapshot
+Oct 22 16:53:53 JC PID=1054 level=info msg=systemreport.reporter: running system report
+Oct 22 16:53:59 JC PID=1054 level=info msg=linuxSshdParamsCollector.Collect: running /usr/sbin/sshd -T: Exec error: exit status 127
+bash: line 1: /usr/sbin/sshd: No such file or directory
+ error=exit status 127
+Oct 22 16:53:59 JC PID=1054 level=error msg=systemreport.reporter: error collecting data error=exit status 127
+Oct 22 16:53:59 JC PID=1054 level=error msg=systemreport.reporter: error collecting data error=exit status 127
+Oct 22 16:53:59 JC PID=1054 level=info msg=systemreport: sending system report
+Oct 22 16:53:59 JC PID=1054 level=info msg=systemreport: posting report to server
+Oct 22 17:08:53 JC PID=1054 level=info msg=client.MessageHandler(): Sending log snapshot
+Oct 22 17:23:53 JC PID=1054 level=info msg=client.MessageHandler(): Sending log snapshot
+Oct 22 17:38:53 JC PID=1054 level=info msg=client.MessageHandler(): Sending log snapshot
+Oct 22 17:53:53 JC PID=1054 level=info msg=client.MessageHandler(): Sending log snapshot
+Oct 23 09:13:19 JC PID=1054 level=error msg=[MQTT] [pinger]   pingresp not received, disconnecting
+
+Oct 23 09:13:24 JC PID=1054 level=info msg=dispatcher.poller(): Received immediate Poll request
+Oct 23 10:20:24 JC PID=1054 level=error msg=[MQTT] [pinger]   pingresp not received, disconnecting
+
+Oct 23 10:20:30 JC PID=1054 level=info msg=dispatcher.poller(): Received immediate Poll request
+Oct 23 10:22:03 JC PID=1054 level=info msg=client.MessageHandler(): Sending log snapshot
